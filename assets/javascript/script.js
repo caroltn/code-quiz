@@ -55,3 +55,5 @@ var questions = [{
   correctAnswer: "a"},
 ];
 
+// Variables that also need to be set
+var final

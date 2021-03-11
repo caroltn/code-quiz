@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- styling imports  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- default from boiler plate -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Quiz</title>
+</head>
+<body>
+  
+  <!-- header w/ link to high scores  -->
+<ul class="collection with-header">
+  <li class="collection-header">
+    <h4 class="center">Code Quiz</h4>
+  </li>
+
+  <p class="center">
+  <a class="waves-effect waves-light btn" href="#">View High Scores</a></p>
+
+
+  <!-- section with timer -->
+  <div id="timer">
+    <p style="font-size: medium; font-weight: bold; text-align: center;">Time Remaining: 0</p>
+  </div>  
+
+<hr>
+
+
+  <!-- section with actual quiz content -->
+  <div class="container">
+
+    <div class="row">
+      <!-- section with intro // hide upon start -->
+      <section class="col s12 center" id= "homePage">
+        <h6 style="font-weight: bold;">How much do you know about coding and web design concepts?</h6>
+        <p style="font-size: small;">Try to answer the following questions within the time limit. Keep in mind that when you answer a question incorrectly time will be subtracted from the clock.</p>
+        <!-- start button -->
+        <div class="center">
+          <button id="start" type="button" class="waves-effect waves-light btn">Start</button>
+        </div>
+      </section>
+      <!-- question section // show upon start-->
+      <section id="questions">
+        <div class="row">
+          <div class="col s12">
+            <h5 id="questions">Questions will go here</h5>
+            <hr>
+            <!-- did you get that question right or wrong? added via JS -->
+            <div class="center" id="buzzer"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- final score section -->
+      <section id="complete">
+        <div class="row">
+          <div class="col s12">
+            <h4>You've completed the quiz!</h4>
+            <p>Your final score is: <span id="score">0</span></p>
+            <p>Enter initials: <span><input placeholder="initials" id="initials" /></span>
+              <button id="submitScore" type="button" class="waves-effect waves-light btn">Submit</button>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- section for high scores -->
+      <section id="highscores">
+        <div class="row">
+          <div class="col s12">
+            <h3>High Scores</h3>
+            <ol id="scoreList"></ol>
+            <button id="goBack" type="button" class="waves-effect waves-light btn">Go Back</button>
+            <button id="clearBtn" type="button" class="waves-effect waves-light btn">Clear Scores</button>
+          </div>
+        </div>
+      </section>
+
+  </div>
+    
+    <!-- JavaScript import -->
+    <script src="assets/javascript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+</body>
+</html>

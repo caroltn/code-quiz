@@ -120,13 +120,13 @@ function checkAnswer(answer) {
 
   if (questions[questionIndex].answer === questions[questionIndex].choices[answer]) {
     // correct answer, add 10 score to final score
-    correctAns+= 20;
+    correctAns+= 30;
     // console.log(correctAns);
     answerCheck.textContent = "Correct!";
   } else {
     // wrong answer, deduct 10 second from timer
     totalTime -= 10;
-    correctAns+= 30;
+    correctAns+= 10;
     timeLeft.textContent = totalTime;
     answerCheck.textContent = "Wrong! The correct answer is: " + questions[questionIndex].answer;
   }

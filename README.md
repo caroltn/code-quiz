@@ -5,3 +5,5 @@ This timed multiple choice quiz is designed to test the user's basic JavaScript 
 
 The code quiz is currently deployed at the following link:
 https://caroltn.github.io/code-quiz/
+
+![demo](demo.gif)

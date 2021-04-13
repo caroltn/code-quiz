@@ -126,7 +126,7 @@ function checkAnswer(answer) {
   } else {
     // wrong answer, deduct 10 second from timer
     totalTime -= 10;
-    correctAns+= 10;
+    correctAns+= 30;
     timeLeft.textContent = totalTime;
     answerCheck.textContent = "Wrong! The correct answer is: " + questions[questionIndex].answer;
   }
